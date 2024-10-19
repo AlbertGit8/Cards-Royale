@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards Royale</title>
+    <link rel="shortcut icon" href="images/icono.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <audio autoplay loop>
+        <source src="audio/background-music.mp3" type="audio/mpeg">
+        Tu navegador no soporta la reproduccion de audio
+    </audio>
+   
+    <audio id="sonido">
+        <source src="audio/seleccion.mp3" type="audio/mpeg">
+        Tu navegador no soporta la etiqueta de audio.
+    </audio>
+
+    <header class="cabecera">
+        <img src="images/logo.png" alt="" class="cabecera__logo">
+
+    </header>
+
+    <main class="contenido">
+
+        <section class="info" id="pekka">
+            <div class="info__titulo sombra">
+                <h1>P.e.k.k.a.</h1>
+            </div>
+            <div class="info__content">
+                <div class="info__content--cabecera">
+
+                    <div class="cabecera__imagen">
+                        <img src="images/7elixir.png" alt="" class="tarjeta__elixir">
+                        <img src="images/pekka.png" alt="" class="tarjeta__imagen pekka">
+                    </div><!--Fin cabecera__imagen-->
+
+                    <div class="cabecera__derecha">
+                        <div class="cabecera__derecha--calidad">
+                            <p>Calidad: <span class="sombra epica">Épica</span></p>
+                        </div>
+
+                        <div class="cabecera__derecha--historia">
+                            <p>Una luchadora cuerpo a cuerpo pesada y lenta. Se contonea ligeramente al andar, ¡Pero
+                                atiza un puñetazo que no veas!</p>
+                        </div>
+                    </div><!--FIn cabecera derecha-->
+
+
+                </div><!--Fin info__content--cabecera-->
+
+                <div class="info__content--main">
+                    <div class="datos">
+                        <p><img src="images/daño.webp" alt="" class="informacion__lista--icono"> <span class="dato">Daño
+                                <span class="dato__numero sombra">1,188</span></span> </p>
+                        <p><img src="images/vida.webp" alt="" class="informacion__lista--icono"><span
+                                class="dato">Puntos de
+                                vida<span class="dato__numero sombra">5,475</span></span> </p>
+                        <p><img src="images/objetivos.webp" alt="" class="informacion__lista--icono"><span
+                                class="dato">Objetivos <span class="dato__numero sombra">Terrestres</span></span> </p>
+                        <p><img src="images/alcance.webp" alt="" class="informacion__lista--icono"><span
+                                class="dato">Alcance <span class="dato__numero sombra">Cuerpo a cuerpo</span></span>
+                        </p>
+                        <p><img src="images/segundo.webp" alt="" class="informacion__lista--icono"><span
+                                class="dato">Daño
+                                por segundo <span class="dato__numero sombra">660</span></span> </p>
+                        <p><img src="images/velocidad.webp" alt="" class="informacion__lista--icono"><span
+                                class="dato">Velocidad <span class="dato__numero sombra">Lenta</span></span> </p>
+                    </div>
+
+                    <div class="emote">
+                        <img src="images/emotePekka.gif" alt="">
+                    </div>
+                </div><!--Fin info__content--main-->
+
+
+            </div>
+        </section><!--Fin info pekka-->
+
+        <section class="info" id="mago">
+            <div class="info__titulo sombra">
+                <h1>Mago</h1>
+            </div>
+            <div class="info__content">
+                <div class="info__content--cabecera">
+
+                    <div class="cabecera__imagen">
+                        <img src="images/5elixir.png" alt="" class="tarjeta__elixir">
+                        <img src="images/mago.png" alt="" class="tarjeta__imagen mago">
+                    </div><!--Fin cabecera__imagen-->
+
+                    <div class="cabecera__derecha">
+                        <div class="cabecera__derecha--calidad">
+                            <p>Calidad: <span class="sombra especial">Especial</span></p>
+                        </div>
+
+                        <div class="cabecera__derecha--historia">
+                            <p>El hombre más increible que jamas haya pisado la arena. El mago te hará volar por los
+                                aires con su belleza... o con sus bolas de fuego.</p>
+                        </div>
+                    </div><!--FIn cabecera derecha-->
+
+
+                </div><!--Fin info__content--cabecera-->
+
+                <div class="info__content--main">
+                    <div class="datos">
+                        <p><img src="images/daño.webp" alt="" class="informacion__lista--icono"> <span class="dato">Daño
+                                <span class="dato__numero sombra">340</span></span> </p>
+                        <p><img src="images/vida.webp" alt="" class="informacion__lista--icono"><span
+                                class="dato">Puntos de
+                                vida<span class="dato__numero sombra">870</span></span> </p>
+                        <p><img src="images/objetivos.webp" alt="" class="informacion__lista--icono"><span
+                                class="dato">Objetivos <span class="dato__numero sombra">Cualquiera</span></span> </p>
+                        <p><img src="images/alcance.webp" alt="" class="informacion__lista--icono"><span
+                                class="dato">Alcance <span class="dato__numero sombra">5.5</span></span>
+                        </p>
+                        <p><img src="images/segundo.webp" alt="" class="informacion__lista--icono"><span
+                                class="dato">Daño
+                                por segundo <span class="dato__numero sombra">242</span></span> </p>
+                        <p><img src="images/velocidad.webp" alt="" class="informacion__lista--icono"><span
+                                class="dato">Velocidad <span class="dato__numero sombra">Media</span></span> </p>
+                    </div>
+
+                    <div class="emote">
+                        <img src="images/emoteMago.webp" alt="">
+                    </div>
+                </div><!--Fin info__content--main-->
+
+
+            </div>
+        </section><!--Fin info mago-->
+
+        <section class="info" id="duende">
+            <div class="info__titulo sombra">
+                <h1>Duendes</h1>
+            </div>
+            <div class="info__content">
+                <div class="info__content--cabecera">
+
+                    <div class="cabecera__imagen">
+                        <img src="images/2elixir.png" alt="" class="tarjeta__elixir">
+                        <img src="images/duende.png" alt="" class="tarjeta__imagen ">
+                    </div><!--Fin cabecera__imagen-->
+
+                    <div class="cabecera__derecha">
+                        <div class="cabecera__derecha--calidad">
+                            <p>Calidad: <span class="sombra comun">Comun</span></p>
+                        </div>
+
+                        <div class="cabecera__derecha--historia">
+                            <p>Cuatro rápidos atacantes cuerpo a cuerpo sin armadura. Son pequeños, verdes y malévolos.
+                            </p>
+                        </div>
+                    </div><!--FIn cabecera derecha-->
+
+
+                </div><!--Fin info__content--cabecera-->
+
+                <div class="info__content--main">
+                    <div class="datos">
+                        <p><img src="images/daño.webp" alt="" class="informacion__lista--icono"> <span class="dato">Daño
+                                <span class="dato__numero sombra">175</span></span> </p>
+                        <p><img src="images/vida.webp" alt="" class="informacion__lista--icono"><span
+                                class="dato">Puntos de
+                                vida<span class="dato__numero sombra">293</span></span> </p>
+                        <p><img src="images/objetivos.webp" alt="" class="informacion__lista--icono"><span
+                                class="dato">Objetivos <span class="dato__numero sombra">Terrestres</span></span> </p>
+                        <p><img src="images/alcance.webp" alt="" class="informacion__lista--icono"><span
+                                class="dato">Alcance <span class="dato__numero sombra">Cuerpo a cuerpo</span></span>
+                        </p>
+                        <p><img src="images/segundo.webp" alt="" class="informacion__lista--icono"><span
+                                class="dato">Daño
+                                por segundo <span class="dato__numero sombra">159</span></span> </p>
+                        <p><img src="images/velocidad.webp" alt="" class="informacion__lista--icono"><span
+                                class="dato">Velocidad <span class="dato__numero sombra">Muy rápida</span></span> </p>
+                    </div>
+
+                    <div class="emote">
+                        <img src="images/emoteDuende.gif" alt="">
+                    </div>
+                </div><!--Fin info__content--main-->
+
+
+            </div>
+        </section><!--Fin info duendes-->
+
+        <section class="dock">
+            <img onclick="cambiar('pekka')" id="epica" class="seleccion" src="images/pekka.png" alt="">
+            <img onclick="cambiar('mago')" id="especial" class="seleccion" src="images/mago.png" alt="">
+            <img onclick="cambiar('duende')" class="seleccion" src="images/duende.png" alt="">
+        </section>
+
+        
+
+
+    </main>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

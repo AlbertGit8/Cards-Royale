@@ -1,0 +1,247 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    /* hack para box model*/
+    scroll-snap-type: y mandatory;
+    /*le decimos que haga scroll de arriba hacia abajo*/
+}
+
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/*el asterisco selecciona todos los elementos del html, las comas se utilizan para añadir mas clases a las que les vayas añadir las mismas propiedades y asi ahorramos codigo
+*/
+
+body {
+    font-size: 16px;
+    /* 1rem = 10px*/
+    font-family: "Bangers", system-ui;
+    font-weight: 580;
+    background-image: url(../images/fondo.webp);
+    /*con esta propiedad podemos darle un degrado de color al fondo del body que empieza desde abajo con el grisClaro y acaba arriba con el blanco*/
+    background-size: cover;
+
+}
+
+p {
+    margin: 0;
+}
+
+img {
+    height: 100%;
+}
+
+.cabecera {
+    height: 13rem;
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.cabecera__logo {
+    height: 100%;
+}
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.10rem;
+
+}
+
+.info {
+    background: #61667c;
+    width: 50rem;
+    border-radius: 0.6rem;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.info__titulo h1 {
+    text-align: center;
+    margin: 0;
+    margin-top: 0.6rem;
+   
+    color: #fafafb;
+}
+
+.info__content {
+    padding: 0.6rem;
+    border-radius: 0.6rem;
+}
+
+
+/* ***CABECERA*** */
+.info__content--cabecera {
+    background: #fbfbfd;
+    border-radius: 0.6rem 0.6rem 0 0;
+    display: flex;
+    padding: 3rem;
+    align-items: center;
+}
+
+.cabecera__imagen {
+    position: relative;
+    display: inline-block;
+}
+
+.tarjeta__elixir {
+    height: 4rem;
+    position: absolute;
+    top: -1rem;
+    left: -1rem;
+    animation: subirBajar 2s ease-in-out infinite;
+}
+
+
+@keyframes subirBajar {
+    0% {
+        transform: translateY(0);
+        /*Comienza en su posición original*/
+    }
+
+    50% {
+        transform: translateY(-0.5rem);
+        /*Sube 30 píxeles */
+    }
+
+    100% {
+        transform: translateY(0);
+        /* Vuelve a su posición original */
+    }
+}
+
+
+.tarjeta__imagen {
+    border-radius: 1rem;
+    height: 15rem;
+    outline: solid 0.5rem;
+   
+}
+
+.cabecera__derecha {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 2.5rem;
+
+}
+
+.cabecera__derecha p {
+    margin: 0;
+}
+
+.cabecera__derecha--calidad {
+    background: #01babd;
+    color: #f7fdfe;
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+}
+
+.cabecera__derecha--historia {
+    text-align: center;
+}
+
+/* *** Info carta  *** */
+.info__content--main {
+    background: #e2eff8;
+    border-radius: 0 0 0.6rem 0.6rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  
+}
+
+.datos {
+    display: grid;
+    
+    grid-template-columns: auto auto; /* Las columnas se ajustan al contenido */
+    justify-content: center;
+    gap: 1rem; 
+}
+
+.info__content--main p {
+    background: #bbd2da;
+    height: 5rem;
+    width: 20rem;
+    border-radius: 0.3rem;
+    display: flex;
+    align-items: center;
+}
+
+.dato {
+    display: flex;
+    flex-direction: column;
+}
+
+.dato__numero {
+    font-size: 2rem;
+    color: #f7f8f6;
+}
+
+.emote {
+    background: white;
+    display: inline-block;
+    height: 15rem;
+    margin-top: 2rem;
+    border-radius: 2rem;
+    
+}
+
+.sombra {
+    text-shadow: 3px 3px 5px black;
+}
+
+.epica {
+    color: rgb(217, 79, 255);
+}
+
+.pekka {
+    box-shadow: 0px 0px 18px 15px rgba(200,0,253,1);
+}
+
+.especial {
+    color: #f96803;
+}
+
+.mago {
+    box-shadow: 0px 0px 18px 15px #f96803;
+}
+
+.comun {
+    color: #b0aeac;
+}
+
+
+/* ***DOCK*** */
+
+.dock {
+    height: 20rem;
+    background-image: linear-gradient(to top, #064389 0%, #0b81d9 100%);
+    display: flex;
+    margin-top: 3rem;
+    padding: 3rem;
+    padding-bottom: 4rem;
+    gap: 3rem;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 1rem 1rem 0 0;
+}
+.dock img {
+    cursor: pointer;
+    border-radius: 1rem;
+    transition: 400ms;
+    border: solid 0.5rem;
+}
+
+.dock img:hover {
+    transform: scale(1.1, 1.1);
+}
