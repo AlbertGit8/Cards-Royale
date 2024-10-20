@@ -55,4 +55,23 @@ seleccion.forEach(element => {
 	});
 });
 
+//creamos la interaccion con el boton de la musica de fondo
+const volumen = document.getElementById('volumen');
+const musica = document.getElementById('musica');
+const mute = document.getElementById('mute');
+
+let reproduciendo = false;
+
+volumen.addEventListener('click',function () {
+	if (reproduciendo) {
+		musica.pause();
+		mute.src = 'images/mute.svg';
+	} else {
+		musica.play();
+		mute.src = 'images/volume.svg';
+	}
+
+	reproduciendo = !reproduciendo;
+})
+
 

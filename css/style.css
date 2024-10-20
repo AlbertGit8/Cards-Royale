@@ -24,7 +24,7 @@ body {
     background-image: url(../images/fondo.webp);
     /*con esta propiedad podemos darle un degrado de color al fondo del body que empieza desde abajo con el grisClaro y acaba arriba con el blanco*/
     background-size: cover;
-
+   
 }
 
 p {
@@ -244,4 +244,24 @@ img {
 
 .dock img:hover {
     transform: scale(1.1, 1.1);
+}
+
+#volumen {
+    display: inline-block;
+    margin-left: 21rem;
+    margin-bottom: 3rem;
+    background: #0b81d9;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+    transition: 200ms;
+}
+
+#volumen:hover {
+ background: #064389;
+}
+
+#volumen:active {
+    transform: scale(0.9, 0.9);
 }
